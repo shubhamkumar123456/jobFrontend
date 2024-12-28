@@ -22,7 +22,7 @@ const AllCompanyJob = () => {
   const [allJobs, seallJobs] = useState([]);
   console.log(allJobs)
   const getCompanyJob = async()=>{
-      let res = await axios.get('http://localhost:8080/job/singlecompanyalljob',{
+      let res = await axios.get('https://jobbackend-s1yb.onrender.com/job/singlecompanyalljob',{
         headers:{
           'Authorization':userStore.token
         }
@@ -37,7 +37,7 @@ const AllCompanyJob = () => {
 
   const handleDelete = async(id)=>{
     console.log(id)
-    let res = await axios.delete(`http://localhost:8080/job/delete/${id}`,{
+    let res = await axios.delete(`https://jobbackend-s1yb.onrender.com/job/delete/${id}`,{
       headers:{
         'Authorization':userStore.token
       }

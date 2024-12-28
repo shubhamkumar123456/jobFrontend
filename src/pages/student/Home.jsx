@@ -38,7 +38,7 @@ const Home = () => {
   console.log(AllJobs)
   const getAllJobs = async()=>{
    try {
-    let res = await axios.get('http://localhost:8080/job/getalljob')
+    let res = await axios.get('https://jobbackend-s1yb.onrender.com/job/getalljob')
     let data = res.data
     setAllJobs(data.jobs)
    } catch (error) {
@@ -65,7 +65,7 @@ const Home = () => {
 
   const handleJobSubmit = async()=>{
     
-    let res = await axios.get(`http://localhost:8080/job/searchJob?location=${searchDetails.location}&title=${searchDetails.title}`)
+    let res = await axios.get(`https://jobbackend-s1yb.onrender.com/job/searchJob?location=${searchDetails.location}&title=${searchDetails.title}`)
     let data = res.data;
     console.log(data);
 

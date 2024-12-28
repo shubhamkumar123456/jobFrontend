@@ -24,7 +24,7 @@ const Login = () => {
 
         console.log(obj)
         
-        let res = await axios.post('http://localhost:8080/users/login',obj);
+        let res = await axios.post('https://jobbackend-s1yb.onrender.com/users/login',obj);
         // console.log(res)
         let data = res.data
         console.log(data) // {msg:"", success:, token ,role} 

@@ -14,7 +14,7 @@ const CompanyDashboard = () => {
 
   console.log(counts)
  async function getCounts(){
-  let res = await axios.get('http://localhost:8080/job/countJob',{
+  let res = await axios.get('https://jobbackend-s1yb.onrender.com/job/countJob',{
     headers:{
       'Authorization':userStore.token
     }

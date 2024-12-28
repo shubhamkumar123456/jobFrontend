@@ -65,7 +65,7 @@ const ApplyJob = () => {
     const handleSubmit = async(e)=>{
         e.preventDefault()
         let obj = {...apllicantDetails,job:location.state._id,companyId:job.userId}
-        let res = await axios.post('http://localhost:8080/applicant/create',obj,{
+        let res = await axios.post('https://jobbackend-s1yb.onrender.com/applicant/create',obj,{
             headers:{
                 'Authorization':userStore.token
             }

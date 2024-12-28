@@ -20,7 +20,7 @@ const Signup = () => {
 
         console.log(obj)
       try {
-        let res = await fetch('http://localhost:8080/users/create',{
+        let res = await fetch('https://jobbackend-s1yb.onrender.com/users/create',{
             method:"POST",
             headers:{
                 'content-type':'application/json'

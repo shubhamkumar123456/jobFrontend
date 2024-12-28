@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 const AppliedJobs = () => {
     let userStore = useSelector((state)=>state.user)
     const getApplied = async()=>{
-        let res = await axios.get('http://localhost:8080/applicant/getApplicants',{
+        let res = await axios.get('https://jobbackend-s1yb.onrender.com/applicant/getApplicants',{
             headers:{
                 'Authorization':userStore.token
             }
