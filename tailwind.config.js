@@ -9,6 +9,6 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("kutty"), require("flyonui"),
+  plugins: [ require("flyonui"),
     require("flyonui/plugin")],
 }
